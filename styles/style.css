@@ -35,20 +35,13 @@ body {
 .main{
   background: lightgreen;
   height: 50vh;
-  display: flow-root;
-  padding: 0 15px;
-}
-
-.group {
-  margin: 0 15px;
-  float: left;
+  display: flex;
+  flex-direction: row;
 }
 
 .group1 {
   background-color: violet;
   width: 250px;
-  /* position: relative; */
-  /* left: -100px; */
 }
 
 .group2 {
@@ -61,16 +54,10 @@ body {
   width: 190px;
 }
 
-/* .clearfix {
-  clear: both;
-} */
-
 /* 슬로건 */
 .slogan {
   background: skyblue;
   height: 10vh;
-  /* clear: both; */
-  /* margin-top: 150px; */
 }
 
 /* 푸터 */
