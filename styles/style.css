@@ -59,6 +59,7 @@ body {
   /* 상위 컨테이닝 블록 기준: position: static이 아닌 경우, 상위에 transform이 있을 때 */
   top: 45px;
   left: 60px;
+  z-index: 10;
 }
 
 /* 텍스트 링크 모음 */
@@ -166,7 +167,7 @@ body {
   left: 0;
 }
 
-.menu-accessibility ,.menu-qna ,.me0nu-archive {
+.menu-accessibility ,.menu-qna ,.menu-archive {
   right: 0;
 }
 
@@ -178,7 +179,7 @@ body {
 .sub-menu li {  
   display: inline-block;
   padding-left: 1em;
-  background-color: royalblue;
+  background-color: gold;
 }
 
 /* 비주얼 */
