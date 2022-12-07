@@ -120,8 +120,10 @@ body {
   height: 47px;
 }
 
+
 .menu-item {
   float: left;
+  position: relative;
 }
 
 /* 구체성 -> 10점 */
@@ -151,7 +153,17 @@ body {
 .sub-menu {
   background-color: pink;
   position: absolute;
+  left: 0;
+  top: 47px;
   display: none;
+}
+
+.is-active .sub-menu{
+  display: block;
+}
+
+.sub-menu li {
+  display: inline-block;
 }
 
 /* 비주얼 */
