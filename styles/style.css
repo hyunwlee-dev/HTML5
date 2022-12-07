@@ -124,6 +124,7 @@ body {
   float: left;
 }
 
+/* 구체성 -> 10점 */
 .menu-button {
   border: 0;
   border-left: 2px solid #fff;
@@ -133,7 +134,18 @@ body {
   font-size: 15px;
   font-weight: 700;
   color: #fff;
-  text-shadow: 1px 1px 5px #000, 2px 2px 5px #000, 3px 3px 5px #000, 4px 4px 5px #000;
+  text-shadow: 1px 1px 0px #000, -1px -1px 0px #000;
+}
+
+/* 구체성 -> 20점 */
+.is-active .menu-button {
+  color: #ff0;
+}
+
+.is-active .menu-button::after {
+  content: "";
+  display: block;
+  border-top: 2px solid #212121;
 }
 
 .sub-menu {
