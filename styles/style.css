@@ -248,21 +248,67 @@ body {
   } 
 }
 
+@keyframes fadeEffect {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .visual {
   height: 120px;
-  /* display: relative; */
-  /* position: relative */
+  position: relative
   /* overflow: hidden; */
+}
+
+.visual::before, .visual::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  /* 무조건 부모영역 크기가 아니다. 100% 줄것 콘텐츠 아무것도 없기 떄문에? */
+  width: 100%;
+  /* width: inherit; */
+  top: 0;
+  left: 0;
+  /* animation-name: fadeEffect;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  animation: fadeEffect 2000ms infinite alternate;
+}
+
+.visual::before {
+  /* background-image: url("./images/ani_flower_01.png"), url("./images/ani_flower_02.png"); */
+  /* background-repeat: no-repeat, no-repeat; */
+  /* background-position: 0 -10px, 600px 0; */
+  background: url("./images/ani_flower_01.png") no-repeat 0 -10px, 
+  url("./images/ani_flower_02.png") no-repeat 600px 0;
+}
+
+.visual::after {
+  /* background-color: #ccc; */
+  /* background-image: url("./images/ani_flower_03.png"), url("./images/ani_flower_04.png");;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 300px 0, 800px 0; */
+  background: url("./images/ani_flower_03.png") no-repeat 300px 0, 
+  url("./images/ani_flower_04.png") no-repeat 800px 0;
+  animation-delay: 1000ms;
 }
 
 .visual-text {
   /* position: absolute; */
   font-family: Georgia, 'Times New Roman', Times, serif;
-  animation-name: moveEffect;
-  animation-duration: 2000ms;
+  /* animation-name: moveEffect;
+  animation-duration: 400ms;
   animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  position: absolute;
+  animation-fill-mode: forwards; */
+  animation: moveEffect 400ms ease-in-out forwards;
+  position: relative;
+  /* inline-block을 주면 안되는 이유? */
+  /* 가려버려서, inline-block은 떠있지 않아서 */
+  z-index: 1;
   /* display: inline-block; */
   /* overflow: hidden; */
   /* font-size: 24px; */
