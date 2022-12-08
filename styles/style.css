@@ -33,11 +33,22 @@ a {
 /* 본문 스타일 */
 body {
   /* em, rem 단위를 사용해보기 */
-  font-size: 1.4rem;
   color: #212121;
-  background: #ccc linear-gradient(to bottom, #ccc 0%, #eee, 35%, #fff, 70%, #fff 100%);
+  font-size: 1.4rem;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  /* background-color: #ccc;
+  background-image: url("./images/bg_flower.png"), linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: 50% 0, 0 0; */
+  /* background 단축 */
+  background: url("./images/bg_flower.png") no-repeat 50% 0, 
+  #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%) repeat 0 0;
+
+  /* background-size: 100px 100px; */
+  /* background-attachment: fixed; */
 }
+
+
 
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer-inner {
@@ -160,6 +171,7 @@ body {
   top: 47px;
   display: none;
   padding: 4px 0;
+  border: 3px solid blue;
 }
 
 .sub-menu a:hover,
@@ -182,6 +194,7 @@ body {
 
 .sub-menu li {  
   display: inline-block;
+  border: 3px solid red;
 }
 
 .sub-menu a {
@@ -217,6 +230,7 @@ body {
     /* transform: scale(0.5); */
     font-size: 12px;
     color: rgba(0, 0, 0, 0.2);
+    /* color: hsla(0, 0%, 0, 0); */
     transform: translate(0, 0);
     /* top: 0; */
     /* left: 0; */
@@ -226,6 +240,7 @@ body {
     /* transform: scale(1); */
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
+    /* color: hsla(0, 0%, 0, 1); */
     transform: translate(400px, 75px);
     /* top: 75px; */
     /* left: 400px; */
@@ -234,19 +249,22 @@ body {
 }
 
 .visual {
-  background: pink;
   height: 120px;
+  /* display: relative; */
   /* position: relative */
+  /* overflow: hidden; */
 }
 
 .visual-text {
   /* position: absolute; */
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: coral;
   animation-name: moveEffect;
   animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  display: inline-block;
+  position: absolute;
+  /* display: inline-block; */
+  /* overflow: hidden; */
   /* font-size: 24px; */
   /* transform-origin: left; */
 }
