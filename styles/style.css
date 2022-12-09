@@ -364,35 +364,29 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
-.login-form::after{
+/* .login-form::after{
   content: "";
   display: block;
   border: 1px solid black;
-}
+} */
 
 .login-form fieldset {
   position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
 }
 
-.user-email {
-  background-color: skyblue;
-  /* display: inline-block; */
-  /* padding: 5px; */
+.user-email,
+.user-pw {
+  margin-bottom: 5px;
 }
 
 .user-email label {
   width: 95px;
 }
 
-.user-pw {
-  background-color: lime;
-  /* display: inline-block; */
-  /* padding: 5px; */
-}
-
 .login-form label {
   display: inline-block;
-  background-color: salmon;
   width: 4em;
 }
 
@@ -400,14 +394,21 @@ body {
   width: 90px;
   height: 24px;
   border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
 }
 
 .login-button {
   position: absolute;
-  width: 60px;
-  height: 100%;
+  width: 57px;
+  height: 53px;
   top: 0;
-  left: 150px;
+  left: 155px;
+  background-color: orangered;
+  color: #fff;
+  border: 0;
+  padding: 0 10px;
+  border-radius: 5px;
 }
 
 .sign {
