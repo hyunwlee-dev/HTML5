@@ -3,7 +3,7 @@
 @import url(./reset.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend {
   /* background-color: red; */
   position: absolute;
   /* top: -9999em; */
@@ -352,25 +352,16 @@ body {
 
 .login-title {
   text-indent: 10px;
-  color: yellow;
-  font-size: 25px;
-  margin-bottom: 15px;
-}
-
-/* 어떻게 지우더라? ㅠㅜㅜㅜㅜㅜ */
-.login legend {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  /* clip: rect(0 0 0 0); */
-  clip-path: polygon(0 0, 0 0, 0 0);
+  color: #ff0;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .login-form{
   background-color: #fff;
-  padding: 15px;
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  border-radius: 5px 5px 0 0;
 }
 
 .login-form::after{
@@ -380,19 +371,52 @@ body {
 }
 
 .login-form fieldset {
+  position: relative;
 }
 
 .user-email {
-  background-color: yellow;
+  background-color: skyblue;
+  /* display: inline-block; */
+  /* padding: 5px; */
+}
+
+.user-email label {
+  width: 95px;
 }
 
 .user-pw {
-  background-color: orange;
+  background-color: lime;
+  /* display: inline-block; */
+  /* padding: 5px; */
+}
+
+.login-form label {
+  display: inline-block;
+  background-color: salmon;
+  width: 4em;
+}
+
+.login-form input {
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+}
+
+.login-button {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  top: 0;
+  left: 150px;
 }
 
 .sign {
   background-color: #fff;
   padding: 15px;
+  border-radius: 0 0 5px 5px;
+  padding: 0 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
 }
 /* .clearfix {
   clear: both;
