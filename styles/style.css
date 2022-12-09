@@ -421,17 +421,15 @@ body {
 } */
 
 .sign {
-  padding-top: 10px;
   display: flow-root;
 }
 
-.sign li {
-  background-color: red;
+.sign li:first-child {
   float: left;
 }
 
 .sign li:last-child {
-  margin-left: 90px;
+  float: right;
 }
 
 .sign a::before {
@@ -442,6 +440,25 @@ body {
   /* text-decoration: inherit; */
   /* width: 1em; */
   /* margin-right: .2em; */
+}
+
+.sign a {
+  display: block;
+  padding: 6px 0;
+  letter-spacing: -1px;
+}
+
+/* 유효성 검사 배너 */
+.validation-list {
+  background-color: yellow;
+  margin-top: 25px;
+  /* padding-top: 1px; */
+}
+
+.validation-list li {
+  background-color: pink;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* .clearfix {
