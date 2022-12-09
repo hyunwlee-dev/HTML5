@@ -456,9 +456,29 @@ body {
 }
 
 .validation-list li {
-  background-color: pink;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* text-align: center; */
+}
+
+/* .validation-list a::before {
+  content: url("./images/validation_icon.png");
+  vertical-align: middle;
+} */
+
+.validation-list a {
+  display: block;
+  background: url("./images/validation_icon.png") no-repeat 25px 50%,
+  #ccc linear-gradient(to bottom, #ccc, #eee);
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  padding: 8px 15px 8px 55px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.validation-list a:hover, .validation-list a:focus {
+  color: #f00;
 }
 
 /* .clearfix {
