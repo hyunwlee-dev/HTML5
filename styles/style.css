@@ -411,14 +411,39 @@ body {
   border-radius: 5px;
 }
 
-.sign {
+/* .sign {
   background-color: #fff;
   padding: 15px;
   border-radius: 0 0 5px 5px;
   padding: 0 10px 10px 10px;
   display: flex;
   justify-content: space-between;
+} */
+
+.sign {
+  padding-top: 10px;
+  display: flow-root;
 }
+
+.sign li {
+  background-color: red;
+  float: left;
+}
+
+.sign li:last-child {
+  margin-left: 90px;
+}
+
+.sign a::before {
+  content: "\f192";
+  font-family: 'fontello';
+  font-weight: normal;
+  /* display: inline-block; */
+  /* text-decoration: inherit; */
+  /* width: 1em; */
+  /* margin-right: .2em; */
+}
+
 /* .clearfix {
   clear: both;
 } */
