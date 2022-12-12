@@ -449,7 +449,6 @@ body {
 
 /* 유효성 검사 배너 */
 .validation-list {
-  background-color: yellow;
   margin-top: 25px;
   /* padding-top: 1px; */
 }
@@ -478,6 +477,62 @@ body {
 
 .validation-list a:hover, .validation-list a:focus {
   color: #f00;
+}
+
+/* 웹 관련 용어 */
+.term {
+  margin-top: 20px;
+  background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 100%);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.term-title {
+  /* root html 10px */
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.term-list {
+  margin-top: 10px;
+  background-color: yellow;
+}
+
+.term-list div {
+  background-color: pink;
+  margin-top: 10px;
+  display: flow-root;
+}
+
+.term-list div:first-child {
+  /* background-color: red; */
+  /* display: flow-root; */
+}
+
+.term-list-subject {
+  float: right;
+  background-color: lime;
+  width: 145px;
+}
+
+.term-list-thumbnail {
+  float: left;
+  background-color: purple;
+}
+
+.term-list-thumbnail img {
+  vertical-align: middle;
+}
+
+.term-list-brief {
+  float: right;
+  background-color: coral;
+  width: 145px;
+}
+
+.cross {
+  /* background-color: blue; */
 }
 
 /* .clearfix {
