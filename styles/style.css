@@ -574,7 +574,9 @@ body {
   padding: 1px 1px 1px 5px;
   flex-grow: 1;
   /* chrome firefox input size diff */
-  width: 0;
+  min-width: 0;
+  width: 100%;
+  font-size: 1.2rem;
   /* max-width: 100%; */
 }
 
