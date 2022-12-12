@@ -496,29 +496,25 @@ body {
 
 .term-list {
   margin-top: 10px;
-  background-color: yellow;
 }
 
 .term-list div {
-  background-color: pink;
   margin-top: 10px;
   display: flow-root;
 }
 
-.term-list div:first-child {
-  /* background-color: red; */
-  /* display: flow-root; */
+.term-list-subject, .term-list-brief {
+  float: right;
+  width: 145px;
 }
 
 .term-list-subject {
-  float: right;
-  background-color: lime;
-  width: 145px;
+  color: #296897;
+  font-weight: 500;
 }
 
 .term-list-thumbnail {
   float: left;
-  background-color: purple;
 }
 
 .term-list-thumbnail img {
@@ -526,13 +522,17 @@ body {
 }
 
 .term-list-brief {
-  float: right;
-  background-color: coral;
-  width: 145px;
+  margin-top: 5px;
+  line-height: 1.5;
 }
 
-.cross {
-  /* background-color: blue; */
+.cross .term-list-subject,
+.cross .term-list-brief {
+  float: left;
+}
+
+.cross .term-list-thumbnail {
+  float: right;
 }
 
 /* .clearfix {
