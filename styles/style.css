@@ -562,7 +562,8 @@ body {
 }
 
 .form-group-label {
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  flex-shrink: 0;
   margin-right: 10px;
 }
 
@@ -573,12 +574,13 @@ body {
   padding: 1px 1px 1px 5px;
   flex-grow: 1;
   /* chrome firefox input size diff */
-  /* min-width: 0; */
+  width: 0;
   /* max-width: 100%; */
 }
 
 .search-button {
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  flex-shrink: 0;
   background-color: #212121;
   color: #fff;
   height: 24px;
