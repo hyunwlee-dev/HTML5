@@ -138,7 +138,6 @@ body {
 
 .menu-item {
   float: left;
-  border-left: #fff;
   /* position: relative; */
 }
 
@@ -168,7 +167,7 @@ body {
 
 .sub-menu {
   position: absolute;
-  top: 47px;
+  /* top: 47px; */
   display: none;
   padding: 4px 0;
 }
