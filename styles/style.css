@@ -817,11 +817,32 @@ body {
   transition-duration: 2000ms, 2000ms;
   transition-delay: 0ms, 2000ms;
   transition-timing-function: ease-in-out; */
-  transition: background-color 2000ms 0ms ease-in-out,
-    border-radius 2000ms 2000ms ease-in-out;
+  /* transition: background-color 2000ms 0ms ease-in-out,
+    border-radius 2000ms 2000ms ease-in-out; */
+  height: 25px;
+  /* padding: 6px 20px; */
+  overflow: hidden;
+  transition: height 400ms 0ms, padding 400ms 400ms;
+  /* padding: 0; */
+}
+
+.related-list li {
+  height: 25px;
+  padding: 0 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.related-list a {
+  /* background-color: pink; */
+  flex-grow: 1;
+  padding: 0 10px;
 }
 
 .related-list:hover, .related-list:focus {
+  height: 147px;
+  padding: 10px 0;
 }
 
 /* 슬로건 */
