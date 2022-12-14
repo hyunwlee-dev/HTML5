@@ -906,6 +906,7 @@ body {
   position: absolute;
   top: 50%;
   right: 0;
+  /* translateY(-50%)와 동일 (현재 legacy를 써야하는 상황이라면) */
   margin-top: -6px;
   display: inline-block;
   width: 20px;
