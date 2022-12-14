@@ -842,7 +842,8 @@ body {
 
 .related-list:hover, .related-list:focus {
   height: 147px;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-top: 10px;
 }
 
 /* 슬로건 */
