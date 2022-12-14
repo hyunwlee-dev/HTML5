@@ -15,8 +15,13 @@ a {
   color: inherit;
 }
 
+html {
+  font-size: 10px;
+}
+
 /* 본문 스타일 */
 body {
+  font-size: 1.4rem;
   color: #212121;
   background-color: #ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -88,10 +93,12 @@ body {
   background-color: #fff;
   min-height: 450px;
   display: flow-root;
+  padding: 30px 15px;
 }
 
 .group {
   float: left;
+  margin: 0 15px;
 }
 
 .group1 {
@@ -104,6 +111,63 @@ body {
 
 .group3 {
   width: 190px;
+}
+
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-effect {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  background: #eee linear-gradient(to bottom, #ccc, #eee);
+}
+
+.text-xl {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.accent-color {
+  color: #a52a2a;
+}
+
+.margin-top-default {
+  margin-top: 20px;
+}
+
+.event-button-wrapper {
+  background-color: #ff0;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.event-button {
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 0;
+  text-indent: -9999px;
+  background: aqua url("./images/back_forward.png") no-repeat;
+}
+
+.event-button-next {
+  /* background-position: -36px 0; */
+  background-position: 100% 0;
+}
+
+.event-thumbnail,
+.event-brieft {
+  margin: 10px 0;
+}
+
+.event-thumbnail img {
+  border: 1px solid #eee;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
+/* 😾 */
+/* 인기 사이트 */
+.favorite {
+  /* margin-top: 20px; */
 }
 
 /* 슬로건 */
