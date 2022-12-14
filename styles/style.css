@@ -134,10 +134,22 @@ body {
   margin-top: 20px;
 }
 
+.event {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+
+}
+
 .event-button-wrapper {
-  background-color: #ff0;
-  overflow: hidden;
-  padding: 4px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  gap: 5px;
+  /* background-color: #ff0; */
+  /* overflow: hidden; */
+  /* padding: 2px; */
 }
 
 .event-button {
@@ -162,6 +174,10 @@ body {
 .event-thumbnail img {
   border: 1px solid #eee;
   box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.related {
+  margin-top: 10px;
 }
 
 /* 😾 */
